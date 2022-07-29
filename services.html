@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Our Services</title>
+</head>
+
+<body>
+    <div>
+        <nav id="topnav">
+          <img src="./img/lion.png" alt="image lion" id="lion" />
+          <h1 id="heading">Padharo Gujarat</h1>
+          <ul>
+            <li class="navbar"><a href="index.html">Home</a></li>
+            <li class="navbar">
+              <a href="./About.html" target="">About </a>
+            </li>
+            <li class="navbar"><a href="./services.html">Service</a></li>
+            <li class="navbar">
+              <a href="./form.html"> Register for call</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div id="headline">OUR SERVICES</div>
+    <div id="whyUS">
+        <div class="whyus_child">
+            <img src="./img/services1.jpg" class="images" id="service1" />
+            <figcaption style="font-size: 20px; font-weight: bold" class="cap1">
+                TRAVEL GUIDE
+            </figcaption>
+        </div>
+        <div class="whyus_child">
+            <img src="./img/services2.jpg" class="images" id="service2" />
+            <figcaption style="font-size: 20px; font-weight: bold" class="cap2">
+                TICKET BOOKING
+            </figcaption>
+        </div>
+        <div class="whyus_child">
+            <img src="./img/service3.JPG" class="images" id="service3" />
+            <figcaption style="font-size: 20px; font-weight: bold" class="cap3">
+                HOTEL BOOKING
+            </figcaption>
+        </div>
+    </div>
+
+    <div>
+        <nav id="bottomnav">
+            <ul>
+                <li><a href="#top">Go to Top</a></li>
+            </ul>
+            <div id="newsletter">
+                <label id="label_news">Sign up for Newsletter: </label>
+                <input id="input_news" placeholder="email id" />
+                <button id="button1" onclick="return validate()">
+                    <b style="font-size: 15px">Submit</b>
+                </button>
+                <div id="error"></div>
+            </div>
+        </nav>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#service1").click(function () {
+                $(".cap1").animate({
+                    height: "toggle",
+                });
+            });
+            $("#service2").click(function () {
+                $(".cap2").animate({
+                    height: "toggle",
+                });
+            });
+            $("#service3").click(function () {
+                $(".cap3").animate({
+                    height: "toggle",
+                });
+            });
+
+
+
+
+
+        });
+    </script>
+</body>
+
+</html>

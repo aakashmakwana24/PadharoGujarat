@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+
+<body id="form-body">
+    <div>
+        <nav id="topnav">
+          <img src="./img/lion.png" alt="image lion" id="lion" />
+          <h1 id="heading">Padharo Gujarat</h1>
+          <ul>
+            <li class="navbar"><a href="index.html">Home</a></li>
+            <li class="navbar">
+              <a href="./About.html" target="">About </a>
+            </li>
+            <li class="navbar"><a href="./services.html">Service</a></li>
+            <li class="navbar">
+              <a href="./form.html"> Register for call</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!----------------------------form of registration------------------------------------------------------------------>
+    <video autoplay muted loop id="background-video">
+        <source src="./vid/vid1.mp4" type="video/mp4" />
+    </video>
+
+    <div class="form-style-5">
+        <form id="form" action="Submitted.html" onsubmit="return validateForm()">
+            <fieldset>
+                <legend><span class="number">1</span> Provide Information</legend>
+                <div id="error1"></div>
+                <!--error node -->
+                <input id="username" type="text" name="field1" placeholder="Your Name *" onblur="validate1()"/>
+
+                <div id="error2"></div>
+                <!--error node -->
+                <input id="mail" type="email" name="field2" placeholder="Your Email *" onblur="validate3()"/>
+
+                <div id="error3"></div>
+                <!--error node -->
+                <input id="number" type="number" name="field3" placeholder="Mobile Number *" onblur="validate2()" />
+
+
+                <label for="place">Interested place in Gujarat:</label>
+                <select id="place" name="field4">
+                    <optgroup label="South Gujarat">
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="Kutch">Kutch</option>
+                        <option value="Gir National Park">Gir National Park</option>
+                        <option value="Somnath">Somnath</option>
+                        <option value="Statue of Unity">Statue of Unity</option>
+                        <option value="Dwarka">Dwarka</option>
+                    </optgroup>
+                    <optgroup label="North Gujarat">
+                        <option value="Saputara">Saputara</option>
+                        <option value="Champaner">Champaner</option>
+                        <option value="Junagadh">Junagadh</option>
+                        <option value="Diu">Diu</option>
+                        <option value="Bhuj">Bhuj</option>
+                        <option value="Patan">Patan</option>
+                        <option value="Other">Other</option>
+                    </optgroup>
+                </select>
+                <label for="date">Date of your visit:</label>
+                
+                <input type="date" id="visit-date" />
+            </fieldset>
+            <fieldset>
+                <legend><span class="number">2</span> Additional Info</legend>
+                <textarea name="field3"
+                    placeholder="Additional information you would like to convey to our executive.."></textarea>
+            </fieldset>
+            <input type="submit" value="Apply" />
+        </form>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <!--------------------------------------------------------------------------------------------------------->
+    <div>
+        <nav id="bottomnav">
+            <ul>
+                <li><a href="#top">Go to Top</a></li>
+            </ul>
+            <div id="newsletter">
+                <label id="label_news">Sign up for Newsletter: </label><input id="input_news" placeholder="email id" />
+                <button id="button1"><b style="font-size: 15px">Submit</b></button>
+            </div>
+        </nav>
+    </div>
+
+
+    <script src="./JAVASCRIPT/form.js"></script>
+</body>
+
+</html>
